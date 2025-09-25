@@ -76,11 +76,6 @@ class Optimizer(ABC):
         pass
 
 class LATO(Optimizer):
-    """
-    一个完全独立的、为类SAM优化流程设计的优化器。
-    它包含了处理约束、梯度记忆等所有功能，不依赖于继承其他优化器。
-    """
-
     def __init__(self,
                  parameters: List[Variable],
                  verbose: int = 0,
